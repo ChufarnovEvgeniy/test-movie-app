@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.github.chufarnovevgeniy.testmovieapp.R
 import com.github.chufarnovevgeniy.testmovieapp.ui.movies.MoviesFragment
 
-class MainActivity : AppCompatActivity() {
+class MovieActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
