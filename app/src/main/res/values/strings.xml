@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TestMovieApp</string>
+    <string name="retry">Retry</string>
+    <string name="error_message">Could not load data</string>
 </resources>

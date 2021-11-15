@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_margin"
+        android:textAlignment="center"
+        android:textSize="@dimen/large_text_size"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="North by Current" />
+
+    <ImageView
+        android:id="@+id/poster_image_view"
+        android:layout_width="@dimen/poster_width_size"
+        android:layout_height="@dimen/poster_height_size"
+        android:layout_margin="@dimen/main_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_text_view"
+        tools:src="@color/black" />
+
+    <TextView
+        android:id="@+id/description_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_margin"
+        android:textSize="@dimen/main_text_size"
+        app:layout_constraintTop_toBottomOf="@id/poster_image_view"
+        tools:text="Kristen Stewart stars as an anguished, rebellious Princess Diana in Pablo Larraín’s answer to “The Crown.”" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/main_margin"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@id/description_text_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
